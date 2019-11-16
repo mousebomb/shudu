@@ -123,16 +123,16 @@ export default class CalculatorUI extends Component
 
         {this.state.isLoading === false && <p><a onClick={() => {
           this.runGrid()
-        }}> Calculate </a></p>
+        }}> 开始计算 </a></p>
         }
 
         {this.state.isLoading === false && <p><a onClick={() => {
           this.readTest()
-        }}>Read Test Grid </a></p>
+        }}>读取测试题目</a></p>
         }
         {this.state.isLoading === false && <p><a onClick={() => {
           this.clear()
-        }}>Clear</a></p>
+        }}>清空</a></p>
         }
       </div>);
   }

@@ -16,6 +16,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage": "https://www.mousebomb.org/demo/shudu/",
   "browserslist": {
     "production": [
       ">0.2%",

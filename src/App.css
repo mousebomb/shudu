@@ -14,17 +14,17 @@ body{
   margin:auto;
 }
 .CalculatorUI td{
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   /*border:solid 1px #09d3ac;*/
 }
 .CalculatorUI td input{
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 
 }
 .CalculatorUI .inputTf{
-  font-size: 2em;
+  font-size: 20px;
   text-align: center;
 }
 .CalculatorUI .hrBefore td{
