@@ -1,6 +1,6 @@
 export default class CalculatorModel
 {
-
+  static SLEEP_TIME = 1;
   //
   static resultGrid = [];
 
@@ -25,7 +25,7 @@ export default class CalculatorModel
 
 
   /** 校验81格是否都对 */
-  chkIsCorrect()
+  static chkIsCorrect(gridVal)
   {
     let isCorrect = true;
 
@@ -38,7 +38,7 @@ export default class CalculatorModel
       tmpArr9Nums = [];
       for (let i = 0; i < 9; i++)
       {
-        curNum = this.gridVal[CalculatorModel.calcCellIndex(i, j)];
+        curNum = gridVal[CalculatorModel.calcCellIndex(i, j)];
         if (tmpArr9Nums.indexOf(curNum) != -1)
         {
           //找到重复
@@ -56,7 +56,7 @@ export default class CalculatorModel
       tmpArr9Nums = [];
       for (let j = 0; j < 9; j++)
       {
-        curNum = this.gridVal[CalculatorModel.calcCellIndex(i, j)];
+        curNum = gridVal[CalculatorModel.calcCellIndex(i, j)];
         if (tmpArr9Nums.indexOf(curNum) != -1)
         {
           //找到重复
@@ -78,7 +78,7 @@ export default class CalculatorModel
         {
           for (let l = 0; l < 3; l++)
           {
-            curNum = this.gridVal[CalculatorModel.calcCellIndex(i + k, j + l)];
+            curNum = gridVal[CalculatorModel.calcCellIndex(i + k, j + l)];
             if (tmpArr9Nums.indexOf(curNum) != -1)
             {
               //找到重复
@@ -100,6 +100,14 @@ export default class CalculatorModel
   /** 按当前局势推测一个坐标格的合法值 */
   static predictRange4Cell(gridVal, tryCellIndex)
   {
+    // 如果是已知格，则只有一种被锁定的可能
+    if ( CalculatorModel.inputGridVal[tryCellIndex] >0 )
+    {
+      console.log("CalculatorModel/predictRange4Cell 第"+tryCellIndex+"格已知确定为"+CalculatorModel.inputGridVal[tryCellIndex]);
+      //已知
+      return [CalculatorModel.inputGridVal[tryCellIndex]];
+    }
+
     let cellX = Math.floor(tryCellIndex / 9);
     let cellY = tryCellIndex % 9;
     // 推测不可能的数值
@@ -128,14 +136,16 @@ export default class CalculatorModel
     {
       for (let l = 0; l < 3; l++)
       {
-        let x = subGridX + k;
-        let y = subGridY + l;
+        let x = subGridX*3 + k;
+        let y = subGridY*3 + l;
         if (x != cellX && y != cellY)
         {
           withoutNums.push(gridVal[CalculatorModel.calcCellIndex(x, y)]);
         }
       }
     }
+
+    console.log("CalculatorModel/predictRange4Cell 第"+tryCellIndex+"格("+ cellX+","+cellY+")不可能是",withoutNums);
 
     return this.makeRangeArr(withoutNums);
   }
@@ -161,18 +171,20 @@ export default class CalculatorModel
   {
     // 先监测当前局势这一格可能的选择，然后一个一个试过去
     this.posibilities = CalculatorModel.predictRange4Cell(this.gridVal, this.tryCellIndex);
-    console.log("CalculatorModel/trySolveCell", this.gridVal, this.tryCellIndex, this.posibilities);
     if (this.posibilities.length < 1)
     {
+      console.log("CalculatorModel/trySolveCell 找不到["+ this.tryCellIndex+"]的可能性");
       this.finishCb(false);
       return false;
     }
+    console.log("CalculatorModel/trySolveCell 找第"+this.tryCellIndex+"格的可能性有："+this.posibilities.join(","),this.gridVal);
+
 
     this.curPosibilityIndex = 0;
 
     setTimeout(() => {
       this.tryLoopNextPosibility();
-    }, 50);
+    }, CalculatorModel.SLEEP_TIME);
 
   }
 
@@ -187,6 +199,7 @@ export default class CalculatorModel
       this.tryPosibility(li)
     } else
     {
+      console.log("CalculatorModel/tryLoopNextPosibility 可能性用完都不行，测试过都可能性:" , this.posibilities);
       this.finishCb(false);
       return false;
     }
@@ -198,6 +211,7 @@ export default class CalculatorModel
     this.gridVal[this.tryCellIndex] = li;
     // 显示临时假设
     CalculatorModel.traceCb(this.gridVal);
+    console.log("CalculatorModel/tryPosibility 假设digit"+this.tryCellIndex+"为：" +li +", 则81格序列为："+this.gridVal.join(",") );
     // 是否是最后一级 最后一级如果有有效的li则返回true
     if (this.tryCellIndex === 80)
     {
@@ -216,36 +230,24 @@ export default class CalculatorModel
         //如果递归的下一级失败 则本级待定，迭代下一个可能
         setTimeout(() => {
           this.tryLoopNextPosibility();
-        }, 50);
+        }, CalculatorModel.SLEEP_TIME);
       }
     });
 
     return m.trySolveCell();
   }
 
-  /** 试运行， 产生题目并生产结果 */
-  runRandom()
-  {
-    let grid = [];
-    for (let i = 0; i < 81; i++)
-    {
-      grid[i] = 0;
-    }
-    this.beginWith(grid, 0, () => {
-      console.log("found ", CalculatorModel.resultGrid);
-    });
-    this.trySolveCell();
-
-  }
 
   static traceCb = function(){};
+  static inputGridVal=[];
 
   /** 运行， 生产结果 */
   runGrid( inputGridVals ,displayCb )
   {
     CalculatorModel.traceCb = displayCb;
+    CalculatorModel.inputGridVal = inputGridVals;
     this.beginWith(inputGridVals, 0, () => {
-      console.log("found ", CalculatorModel.resultGrid);
+      console.log("found ", CalculatorModel.chkIsCorrect(CalculatorModel.resultGrid),CalculatorModel.resultGrid );
       displayCb ( CalculatorModel.resultGrid);
     });
     this.trySolveCell();
