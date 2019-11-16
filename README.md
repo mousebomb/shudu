@@ -1,7 +1,12 @@
 # 数独求解器
 
 1. 横、竖、九宫 各9各区域，共27个区域 进行扫描，对需要暴力求解的范围缩小   (以坐标点值可能性存储）
-2.
+2. ...
+
+
+额，这思路没写好，代码已经写好了。  2019.11.16
+
+老婆最近迷上了数独，让我给她检查做得对不对。我觉得很有趣，写个程序来帮忙求解和验证。
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

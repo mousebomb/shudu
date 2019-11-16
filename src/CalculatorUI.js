@@ -22,21 +22,10 @@ export default class CalculatorUI extends Component
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td className="vrBefore"><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-          </tr>
-          <tr>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td className="vrBefore"><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
           </tr>
@@ -44,21 +33,10 @@ export default class CalculatorUI extends Component
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td className="vrBefore"><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-          </tr>
-          <tr>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td className="vrBefore"><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
           </tr>
@@ -66,10 +44,21 @@ export default class CalculatorUI extends Component
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td className="vrBefore"><input type="text" className="inputTf" name="" id=""/></td>
+            <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td className="vrBefore"><input type="text" className="inputTf" name="" id=""/></td>
+            <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td><input type="text" className="inputTf" name="" id=""/></td>
+          </tr>
+          <tr className="hrBefore">
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td className="vrBefore"><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td className="vrBefore"><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
           </tr>
@@ -77,21 +66,10 @@ export default class CalculatorUI extends Component
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td className="vrBefore"><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-          </tr>
-          <tr>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
-            <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td className="vrBefore"><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
           </tr>
@@ -99,10 +77,21 @@ export default class CalculatorUI extends Component
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td className="vrBefore"><input type="text" className="inputTf" name="" id=""/></td>
+            <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td className="vrBefore"><input type="text" className="inputTf" name="" id=""/></td>
+            <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td><input type="text" className="inputTf" name="" id=""/></td>
+          </tr>
+          <tr className="hrBefore">
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td className="vrBefore"><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td className="vrBefore"><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
           </tr>
@@ -110,10 +99,21 @@ export default class CalculatorUI extends Component
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td className="vrBefore"><input type="text" className="inputTf" name="" id=""/></td>
+            <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td className="vrBefore"><input type="text" className="inputTf" name="" id=""/></td>
+            <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td><input type="text" className="inputTf" name="" id=""/></td>
+          </tr>
+          <tr>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td className="vrBefore"><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td><input type="text" className="inputTf" name="" id=""/></td>
+            <td className="vrBefore"><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
             <td><input type="text" className="inputTf" name="" id=""/></td>
           </tr>
@@ -123,17 +123,28 @@ export default class CalculatorUI extends Component
 
         {this.state.isLoading === false && <p><a onClick={() => {
           this.runGrid()
-        }}>Run Grid </a></p>
+        }}> Calculate </a></p>
         }
-        {/*<a onClick={() => {*/}
-        {/*  this.model.runRandom()*/}
-        {/*}}>Run Random </a>*/}
+
+        {this.state.isLoading === false && <p><a onClick={() => {
+          this.readTest()
+        }}>Read Test Grid </a></p>
+        }
+        {this.state.isLoading === false && <p><a onClick={() => {
+          this.clear()
+        }}>Clear</a></p>
+        }
       </div>);
   }
 
   readTest()
   {
     let inputTfs = window.document.getElementsByClassName("inputTf");
+    for (let i = 0; i < 81; i++)
+    {
+      inputTfs.item(i).style.backgroundColor ="";
+      inputTfs.item(i).value="";
+    }
     inputTfs.item(1).value = 7;
     inputTfs.item(3).value = 1;
     inputTfs.item(5).value = 6;
@@ -164,12 +175,17 @@ export default class CalculatorUI extends Component
     inputTfs.item(79).value = 4;
   }
 
-
+  clear(){
+    let inputTfs = window.document.getElementsByClassName("inputTf");
+    for (let i = 0; i < 81; i++)
+    {
+      inputTfs.item(i).style.backgroundColor ="";
+      inputTfs.item(i).value="";
+    }
+  }
 
   runGrid()
   {
-this.readTest();
-
     //
     let inputTfs = window.document.getElementsByClassName("inputTf");
     //这里是横竖排列和model是反的，没关系，因为是对称，都一样。
@@ -178,13 +194,15 @@ this.readTest();
     {
       let inputVal = parseInt(inputTfs.item(i).value) || 0;
       if (inputVal >0)
-        inputTfs.item(i).style.backgroundColor ="red";
+        inputTfs.item(i).style.backgroundColor ="yellow";
+      else
+        inputTfs.item(i).style.backgroundColor ="";
+
       gridVals.push( inputVal );
     }
     this.setState({isLoading:true});
 
     this.model.runGrid( gridVals  , (result)=>{
-
       for (let i = 0; i < 81; i++)
       {
         inputTfs.item(i).value = result[i];

@@ -211,7 +211,7 @@ export default class CalculatorModel
     this.gridVal[this.tryCellIndex] = li;
     // 显示临时假设
     CalculatorModel.traceCb(this.gridVal);
-    console.log("CalculatorModel/tryPosibility 假设digit"+this.tryCellIndex+"为：" +li +", 则81格序列为："+this.gridVal.join(",") );
+    console.log("CalculatorModel/tryPosibility 假设digit"+this.tryCellIndex+"为：" +li +", 则序列为："+this.gridVal.join(",") );
     // 是否是最后一级 最后一级如果有有效的li则返回true
     if (this.tryCellIndex === 80)
     {

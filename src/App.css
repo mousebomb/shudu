@@ -1,26 +1,10 @@
 .App {
   text-align: center;
-  background-color: #282c34;
   color: white;
 }
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
+body{
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #09d3ac;
 }
 
 .CalculatorUI{
@@ -30,15 +14,24 @@
   margin:auto;
 }
 .CalculatorUI td{
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   /*border:solid 1px #09d3ac;*/
 }
 .CalculatorUI td input{
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
 
 }
 .CalculatorUI .inputTf{
+  font-size: 2em;
+  text-align: center;
+}
+.CalculatorUI .hrBefore td{
+  border-top: solid 3px #336699;
+
+}
+.CalculatorUI .vrBefore{
+  border-left: solid 3px #336699;
 
 }
