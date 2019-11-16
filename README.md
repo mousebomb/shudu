@@ -1,3 +1,9 @@
+# 数独求解器
+
+1. 横、竖、九宫 各9各区域，共27个区域 进行扫描，对需要暴力求解的范围缩小   (以坐标点值可能性存储）
+2.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

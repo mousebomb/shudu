@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  color: white;
 }
 
 .App-logo {
@@ -19,4 +21,24 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.CalculatorUI{
+  text-align: center;
+}
+.CalculatorUI table{
+  margin:auto;
+}
+.CalculatorUI td{
+  width: 30px;
+  height: 30px;
+  /*border:solid 1px #09d3ac;*/
+}
+.CalculatorUI td input{
+  width: 30px;
+  height: 30px;
+
+}
+.CalculatorUI .inputTf{
+
 }
